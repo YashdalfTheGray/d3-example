@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>D3 Example</title>
+
+	<meta charset="utf-8">
+
+	<script src="d3.js"></script>
+</head>
+<body>
+	<h1>D3 Examples!</h1>
+	<div id="circle"></div>
+
+	<script type="text/javascript">
+
+		var data = [4, 87, 15, 16, 23, 42];
+		var isBlue = true;
+		var defaultColor = '#2196F3';
+
+		var body = d3.select("body");
+		var div = body.append("div");
+		div.html("Hello world!");
+
+		var sampleSVG = d3.select("#circle")
+			.append('svg')
+			.attr('width', 100)
+			.attr('height', 100);
+
+		sampleSVG.append('circle')
+			.style('stroke', 'gray')
+			.style('fill', '#2196F3')
+			.attr('r', 20)
+			.attr('cx', 50)
+			.attr('cy', 50)
+			.on('mouseover', mouseOverFunction)
+			.on('mouseout', mouseOutFunction)
+			.on('click', clickFunction);
+
+		function mouseOverFunction() {
+			d3.select(this)
+				.transition()
+				.delay(0)
+				.duration(300)
+				.attr('r', 40)
+				.style('fill', '#00E676');
+		}
+
+		function mouseOutFunction() {
+			d3.select(this)
+				.transition()
+				.delay(100)
+				.duration(300)
+				.attr('r', 20)
+				.style('fill', defaultColor);
+		}
+
+		function clickFunction() {
+			defaultColor = isBlue ? '#FF9800' : '#2196F3'
+			isBlue = !isBlue;
+		}
+	</script>
+</body>
+</html>
