@@ -1,6 +1,12 @@
 # d3-example
 Messin' around with D3!
 
+## Branches
+
+`plain_d3` is for experimenting with just D3. 
+
+More to come!
+
 ## Links
 
 [D3 Tutorial](http://christopheviau.com/d3_tutorial/)
