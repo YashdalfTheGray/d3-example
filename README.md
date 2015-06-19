@@ -14,3 +14,7 @@ More to come!
 [D3 Tutorial](http://christopheviau.com/d3_tutorial/)
 
 [D3 Gallery](https://github.com/mbostock/d3/wiki/Gallery)
+
+[Angular and D3 Tutorial](http://www.ng-newsletter.com/posts/d3-on-angular.html)
+
+[Angular and D3 Resources](https://www.dashingd3js.com/d3-resources/d3-and-angular)
