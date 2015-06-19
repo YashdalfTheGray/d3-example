@@ -2,12 +2,17 @@
 <html>
 <head>
 	<title>D3 Example</title>
-	
+
 	<meta charset="utf-8">
 
-	<script src="d3.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
+	<script src="d3-angular-di.js"></script>
+	<script src="app.js"></script>
 </head>
-<body>
-
+<body ng-app="angularD3">
+	<div ng-controller="mainViewCtrl">
+		<h1>{{appName}}</h1>
+		<d3-bars message="'Hello there!'"></d3-bars>
+	</div>
 </body>
 </html>
