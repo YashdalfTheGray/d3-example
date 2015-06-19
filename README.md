@@ -5,6 +5,8 @@ Messin' around with D3!
 
 `plain_d3` is for experimenting with just D3. 
 
+`angular_d3` is for integrating D3 with Angular.
+
 More to come!
 
 ## Links
