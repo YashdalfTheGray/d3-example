@@ -12,7 +12,8 @@
 <body ng-app="angularD3">
 	<div ng-controller="mainViewCtrl">
 		<h1>{{appName}}</h1>
-		<d3-bars message="'Hello there!'"></d3-bars>
+		<p><input ng-model="userMessage" /></p>
+		<d3-circle message="userMessage"></d3-circle>
 	</div>
 </body>
 </html>

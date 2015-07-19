@@ -1,7 +1,7 @@
 /* global angular */
 
 angular.module('angularD3', ['d3'])
-.directive('d3Bars', 
+.directive('d3Circle', 
 	[
 		'd3Service',
 		function (d3Service) {
