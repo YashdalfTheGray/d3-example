@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>D3 Example</title>
+    <title>D3 Example</title>
 
-	<meta charset="utf-8">
+    <meta charset="utf-8">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.js"></script>
-	<script src="d3-angular-di.js"></script>
-	<script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="d3-angular-di.js"></script>
+    <script src="app.js"></script>
 </head>
 <body ng-app="angularD3">
-	<div ng-controller="mainViewCtrl">
-		<h1>{{appName}}</h1>
-		<p><input ng-model="userMessage" /></p>
-		<d3-circle message="userMessage"></d3-circle>
-	</div>
+    <div ng-controller="mainViewCtrl">
+        <h1>{{appName}}</h1>
+        <p><input ng-model="userMessage" /></p>
+        <d3-circle message="userMessage"></d3-circle>
+    </div>
 </body>
 </html>
